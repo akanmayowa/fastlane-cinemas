@@ -11,10 +11,11 @@ class MoviesFactory extends Factory
     public function definition()
     {
         return [
-            'movies_id' => $this->faker->randomElement([1,2,3]),
+            'cinema_id' => $this->faker->randomElement([1,2,3]),
             'name' => $this->faker->randomElement(['coming to america', 'half of the yellow sun', 'mission impossible']),
             'rating' => $this->faker->randomElement([1,2,3,4,5]),
-            'genre' => $this->faker->randomElement(['action','drama','comedy', 'sci-fi', 'thriller'])
+            'genre' => $this->faker->randomElement(['action','drama','comedy', 'sci-fi', 'thriller']),
+            'showtime' => now(),
         ];
     }
 }

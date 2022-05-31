@@ -11,18 +11,15 @@ class CinemasSeeder extends Seeder
     public function run()
     {
         Cinemas::create([
-            'movies_id' => 1,
             'cinema_name' => 'Lagos',
         ]);
 
         Cinemas::create([
-            'movies_id' => 2,
             'cinema_name' => 'Abuja',
         ]);
 
         Cinemas::create([
-            'movies_id' => 3,
-            'cinema_id' => 'Ibadan',
+            'cinema_name' => 'Ibadan',
         ]);
     }
 }

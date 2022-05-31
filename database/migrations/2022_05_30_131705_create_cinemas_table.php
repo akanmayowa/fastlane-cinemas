@@ -11,7 +11,6 @@ class CreateCinemasTable extends Migration
     {
         Schema::create('cinemas', function (Blueprint $table) {
             $table->id();
-            $table->foreign('movies_id')->references('id')->on('movies')->onDelete('cascade');
             $table->string('cinema_name');
             $table->timestamps();
         });

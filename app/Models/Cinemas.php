@@ -9,10 +9,12 @@ use App\Models\Movies;
 class Cinemas extends Model
 {
     use HasFactory;
-    protected $fillable = ['movies_id',  'cinema_name'];
-
+    protected $fillable = ['cinema_name'];
     public function movies()
     {
-        return $this->belongsTo(Movies::class);
+        return $this->hasOne(Movies::class);
     }
+
+
+
 }
